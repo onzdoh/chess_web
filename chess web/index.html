@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Website</title>
+  <link rel="stylesheet" href="css\styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="shortcut icon" href="images\favicon.png">
+</head>
+
+<body>
+  <nav>
+    <p class="logo">Chess</p>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="game-selection.html">Game Selection</a></li>
+      <li><a href="leaderboard.html">Leaderboard</a></li>
+      <li><a href="user-profile.html">Profile</a></li>
+      <li><a href="history.html">About chess</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="rules.html">Chess rules</a></li>
+      <li><a href="#" id="register-btn">Register</a></li>
+    </ul>
+  </nav>
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('show');
+    }
+    document.querySelector('.logo').addEventListener('click', toggleMenu);
+  </script>
+
+<div id="register-form" class="register-form" style="display:none;">
+  <form style=" background: #f8fa94d8;">
+    
+    <h2>Register</h2>
+    <button type="button" id="close-form-btn" class="close-form-btn">Close</button>
+    <input type="text" id="first-name" name="first-name" placeholder="First Name">
+    <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+    <input type="email" id="email" name="email" placeholder="Email" required>
+    <input type="password" id="password" name="password" placeholder="Password" required />
+    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required />
+    <button type="submit" id="submit-btn">Submit</button>
+    <p class="success-message"></p>
+  </form>
+</div>
+
+<script src="js\registration-form.js"></script>
+
+
+
+  <div class="forMain">
+    <h1>Welcome to Chess!</h1>
+    <p>Challenge players from around the world and compete to become the ultimate chess champion.</p>
+    <a href="game-selection.html">Start playing</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Chess Website. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

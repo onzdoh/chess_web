@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bullet mode</title>
+  <link rel="stylesheet" href="css\styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="fa/css/all.min.css">
+  <link rel="shortcut icon" href="images\favicon.png">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <p class="logo">Blitz mode</p>
+      <a onclick="selectPageType('Quit')">Quit</a>
+    </nav>
+  </header>
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('show');
+    }
+  
+    document.querySelector('.logo').addEventListener('click', toggleMenu);
+  </script>
+  
+  <main class="forBoard">
+    <div class="chessboard">
+    </div>
+    <script src="js\forBoard.js"></script>
+</main>
+  <footer>
+    <p>&copy; 2023 Chess Website. All rights reserved.</p>
+  </footer>
+  <script src="js\script.js"></script>
+</body>
+
+</html>

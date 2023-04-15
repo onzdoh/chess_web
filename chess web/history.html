@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Chess</title>
+    <link rel="shortcut icon" href="images\favicon.png">
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <header style="    position: sticky; top: 0px;">
+        <nav>
+            <p class="logo">History</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game-selection.html">Game Selection</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="user-profile.html">Profile</a></li>
+                <li><a href="history.html">About chess</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="rules.html">Chess rules</a></li>
+                <li><a href="#" id="register-btn">Register</a></li>
+              </ul>
+        </nav>
+        <script>
+            function toggleMenu() {
+                const nav = document.querySelector('nav');
+                nav.classList.toggle('show');
+            }
+
+            document.querySelector('.logo').addEventListener('click', toggleMenu);
+        </script>
+    </header>
+
+    <div id="register-form" class="register-form" style="display:none;">
+        <form style=" background: #f8fa94d8;">
+
+            <h2>Register</h2>
+            <button type="button" id="close-form-btn" class="close-form-btn">Close</button>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name">
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required />
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password"
+                required />
+            <button type="submit" id="submit-btn">Submit</button>
+            <p class="success-message"></p>
+        </form>
+    </div>
+
+    <script src="js\registration-form.js"></script>
+    <main>
+        <div class="history-page">
+            <h1>History of Chess</h1>
+
+            <div class="columns">
+                <div class="column">
+                    <h2>Column 1</h2>
+                    <p>The history of chess can be traced back nearly 1500 years to its earliest known predecessor,
+                        called chaturanga, in India; its prehistory is the subject of speculation. From India it spread
+                        to Persia. Following the Arab invasion and conquest of Persia, chess was taken up by the Muslim
+                        world and subsequently spread to Europe via Spain (Al Andalus) and Italy (Emirate of Sicily).
+                        The game evolved roughly into its current form by about 1500 CE.
+
+                        "Romantic chess" was the predominant playing style from the late 18th century to the 1880s.[1]
+                        Chess games of this period emphasized quick, tactical maneuvers rather than long-term strategic
+                        planning.[1] The Romantic era of play was followed by the Scientific, Hypermodern, and New
+                        Dynamism eras.[1] In the second half of the 19th century, modern chess tournament play began,
+                        and the first official World Chess Championship was held in 1886. The 20th century saw great
+                        leaps forward in chess theory and the establishment of the World Chess Federation. In 1997, an
+                        IBM supercomputer beat Garry Kasparov, the then world chess champion, in the famous Deep Blue
+                        versus Garry Kasparov match, ushering the game into an era of computer domination. Since then,
+                        computer analysis – which originated in the 1970s with the first programmed chess games on the
+                        market – has contributed to much of the development in chess theory and has become an important
+                        part of preparation in professional human chess. Later developments in the 21st century made the
+                        use of computer analysis far surpassing the ability of any human player accessible to the
+                        public. Online chess, which first appeared in the mid-1990s, also became popular in the 21st
+                        century.
+                        <img src="images\162px-Chess_playing_Louvre_OA117.jpg" style="width:100%">
+                        Precursors to chess originated in India.[3] There, its early form in the 7th century CE was
+                        known as chaturaṅga (Sanskrit: चतुरङ्ग), which translates to "four divisions (of the military)":
+                        infantry, cavalry, elephantry, and chariotry. These forms are represented by the pieces that
+                        would evolve into the modern pawn, knight, bishop, and rook, respectively.[4]
+                        <img src="images\220px-Radha-Krishna_chess.jpg" style="width:100%">
+                        Chess was introduced to Persia from India and became a part of the princely or courtly education
+                        of Persian nobility.[5] Around 600 CE in Sassanid Persia, the name for the game became chatrang
+                        (Persian: چترنگ), which subsequently evolved to shatranj (Arabic: شطرنج; Persian: شترنج) after
+                        the conquest of Persia by the Rashidun Caliphate, due to the lack of native ch and ng sounds in
+                        the Arabic language.[6] The rules were developed further during this time; players started
+                        calling "Shāh!" (Persian for "King!") when attacking the opponent's king, and "Shāh Māt!"
+                        (Persian for "the king is helpless" – see checkmate) when the king was attacked and could not
+                        escape from attack. These exclamations persisted in chess as it traveled to other lands.
+                        <img src="images\800px-The_Chess_Game.jpg" style="width:100%">
+                        The game was taken up by the Muslim world after the early Arab Muslims conquered the Sassanid
+                        Empire, with the pieces largely keeping their Persian names. The Moors of North Africa rendered
+                        the Persian term "shatranj" as shaṭerej, which gave rise to the Spanish acedrex, axedrez and
+                        ajedrez; in Portuguese it became xadrez, and in Greek zatrikion (ζατρίκιον), but in the rest of
+                        Europe it was replaced by versions of the Persian shāh ("king"). Thus, the game came to be
+                        called lūdus scacc(h)ōrum or scacc(h)ī in Latin, scacchi in Italian, escacs in Catalan, échecs
+                        in French (Old French eschecs), schaken in Dutch, Schach in German, szachy in Polish, šahs in
+                        Latvian, skak in Danish, sjakk in Norwegian, schack in Swedish, šakki in Finnish, šah in South
+                        Slavic languages, sakk in Hungarian and şah in Romanian; there are two theories about why this
+                        change happened:
+                        <img src="images\Capablanca-Lasker_1925.jpg" style="width:100%">
+                        From the exclamation "check" or "checkmate" as it was pronounced in various languages.
+                        From the first chessmen known of in Western Europe (except Iberia and Greece) being ornamental
+                        chess kings brought in as curios by Muslim traders.
+
+                        The Mongols call the game shatar, and in Ethiopia it is called senterej, both evidently derived
+                        from shatranj.
+                        <img src="images\Persianmss14thCambassadorfromIndiabroughtchesstoPersianCourt.jpg"
+                            style="width:100%">
+                        Chess spread directly from the Middle East to Russia, where chess became known as шахматы
+                        (shakhmaty, literally "checkmates", a plurale tantum).
+
+                        The game reached Western Europe and Russia by at least three routes, the earliest being in the
+                        9th century. By the year 1000 it had spread throughout Europe.[7] Introduced into the Iberian
+                        Peninsula by the Moors in the 10th century, it was described in a famous 13th-century Spanish
+                        manuscript covering shatranj, backgammon and dice named the Libro de los juegos, which is the
+                        earliest European treatise on chess as well as being the oldest document on European tables
+                        games.
+                        <img src="images\Shams_ud-Din_Tabriz_1502-1504_BNF_Paris.jpg" style="width:100%">
+                        Chess spread throughout the world and many variants of the game soon began taking shape.[8]
+                        Buddhist pilgrims, Silk Road traders and others carried it to the Far East where it was
+                        transformed and assimilated into a game often played on the intersection of the lines of the
+                        board rather than within the squares.[9][10] Chaturanga reached Europe through Persia, the
+                        Byzantine empire and the expanding Arabian empire.[11] Muslims carried chess to North Africa,
+                        Sicily, and Iberia by the 10th century.[12]
+
+                        The game was developed extensively in Europe. By the late 15th century, it had survived a series
+                        of prohibitions and Christian Church sanctions to almost take the shape of the modern game.[13]
+                        Modern history saw reliable reference works,[14] competitive chess tournaments,[15] and exciting
+                        new variants. These factors added to the game's popularity,[15] further bolstered by reliable
+                        timing mechanisms (first introduced in 1861), effective rules,[15] and charismatic players.[16]
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h2>Photo Gallery</h2>
+                    <img class="mySlides" src="images\The_Chess_Players_by_Henry_Fox_Talbot_(2).jpg" style="width:100%">
+                    <img class="mySlides" src="images\pawn-promotion.jpg" style="width:100%">
+                    <img class="mySlides" src="images\chess-castling.png" style="width:100%">
+                    <img class="mySlides" src="images\800px-The_Chess_Game.jpg" style="width:100%">
+                    <img class="mySlides" src="images\The_Chess_Players_by_Henry_Fox_Talbot_(2).jpg" style="width:100%">
+                    <img class="mySlides" src="images\pawn-promotion.jpg" style="width:100%">
+                    <img class="mySlides" src="images\chess-castling.png" style="width:100%">
+                    <img class="mySlides" src="images\Capablanca-Lasker_1925.jpg" style="width:100%">
+                    <script src="js\autogallery.js"></script>
+
+                </div>
+
+                <div class="column">
+                    <h2>Column 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Chess Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

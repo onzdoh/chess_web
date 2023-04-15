@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="css\styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="shortcut icon" href="images\favicon.png">
+</head>
+
+<body>
+  <nav>
+    <p class="logo">Profile</p>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="game-selection.html">Game Selection</a></li>
+      <li><a href="leaderboard.html">Leaderboard</a></li>
+      <li><a href="user-profile.html">Profile</a></li>
+      <li><a href="history.html">About chess</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="rules.html">Chess rules</a></li>
+      <li><a href="#" id="register-btn">Register</a></li>
+    </ul>
+  </nav>
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('show');
+    }
+
+    document.querySelector('.logo').addEventListener('click', toggleMenu);
+  </script>
+
+<div id="register-form" class="register-form" style="display:none;">
+  <form style=" background: #f8fa94d8;">
+    
+    <h2>Register</h2>
+    <button type="button" id="close-form-btn" class="close-form-btn">Close</button>
+    <input type="text" id="first-name" name="first-name" placeholder="First Name">
+    <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+    <input type="email" id="email" name="email" placeholder="Email" required>
+    <input type="password" id="password" name="password" placeholder="Password" required />
+    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required />
+    <button type="submit" id="submit-btn">Submit</button>
+    <p class="success-message"></p>
+  </form>
+</div>
+
+<script src="js\registration-form.js"></script>
+
+  <div class="profile-container">
+    <h1>User Profile</h1>
+    <img src="https://via.placeholder.com/150" alt="User Avatar" class="profile-avatar">
+    <h2>Username</h2>
+    <p>Elo Rating: 1500</p>
+
+    <label for="dropdown" class="dropdown-label">Choose an option:</label>
+    <select id="dropdown" class="dropdown">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+    <h3>Rating: <span id="userRating">1500</span></h3>
+    <label for="theme">Theme:</label>
+    <select id="theme" name="theme">
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+    <label for="pieceStyle">Piece Style:</label>
+    <select id="pieceStyle" name="pieceStyle">
+      <option value="classic">Classic</option>
+      <option value="modern">Modern</option>
+    </select>
+    <label for="boardSize">Board Size:</label>
+    <select id="boardSize" name="boardSize">
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select>
+    <button id="updatePreferences">Update Preferences</button>
+
+
+    <button>Edit Profile</button>
+  </div>
+  <footer>
+    <p>&copy; 2023 Chess Website. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

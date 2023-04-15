@@ -1,0 +1,770 @@
+html {
+  height: 100%;
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #6D5BBA 0%, #8D58B5 50%, #C06C84 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', Arial, sans-serif;
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: auto 1fr auto;
+}
+
+footer {
+  background-color: #424242;
+}
+
+nav {
+  background-color: #424242;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 64px;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 16px;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+
+nav .logo {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 16px;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+
+
+.forMain {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000;
+  color: #ffffff;
+  /* Add 3D effect */
+}
+
+
+.forMain p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.game-types button,
+.forMain a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #6200EE;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border: none;
+  /* Remove the border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-types button:hover,
+.forMain a:hover {
+  background-color: #833AE0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 2rem;
+  margin-bottom: 50px;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.dropdown-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 8px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.leaderboard-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 2rem;
+  display: grid;
+  margin-bottom: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  font-weight: bold;
+}
+
+.forBody {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+
+}
+
+
+@media screen and (max-width: 489px) {
+
+  body {
+    background: linear-gradient(135deg, #6D5BBA 0%, #8D58B5 50%, #C06C84 100%);
+    flex-direction: row;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    grid-template-rows: auto 1fr auto;
+  }
+
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.flex-container>div {
+  width: 600px;
+  margin: 10px;
+}
+
+
+
+
+.history-page {
+  padding: 20px;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  min-width: calc(33.33% - 20px);
+  background-color: #f8f8f8;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+
+
+@media (max-width: 1024px) {
+  .column {
+    min-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .column {
+    min-width: 100%;
+  }
+}
+
+/*--------------------------chessboard--------------------------*/
+.forBoard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 100%;
+  max-width: 80vmin;
+  max-height: 80vmin;
+}
+
+.cell {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-color: #ffffff;
+}
+
+.row:nth-child(odd) .cell:nth-child(odd),
+.row:nth-child(even) .cell:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.row:nth-child(odd) .cell:nth-child(even),
+.row:nth-child(even) .cell:nth-child(odd) {
+  background-color: chocolate;
+}
+
+.figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/*-------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    background-color: #424242;
+    width: 100%;
+    display: none;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 12px 24px;
+    text-align: center;
+  }
+
+  nav.show ul {
+    display: flex;
+  }
+
+  nav .logo {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav ul li a {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+}
+
+.register-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+}
+
+.register-form form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-form input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.register-form button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background-color: #6200EE;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.register-form .success-message {
+  color: green;
+  margin-top: 1rem;
+}
+
+.rules-page {
+  padding: 20px;
+}
+
+.rules-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rules-page .columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.rules-page .column {
+  flex: 1;
+  max-width: calc(33.33% - 20px);
+  background-color: #f8f8f8;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.rules-page .column img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.rules-page .column h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.rules-page .column p {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) {
+  .rules-page .column {
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .rules-page .column {
+    max-width: 100%;
+  }
+}
+
+input:required {
+  border: 1px solid red;
+}
+
+input:required::placeholder {
+  color: red;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container h1 {
+  color: #6200EE;
+}
+
+.profile-container h2 {
+  color: #424242;
+}
+
+.profile-container p {
+  color: #424242;
+}
+
+.profile-container label {
+  display: block;
+  color: #424242;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.profile-container select {
+  width: 100%;
+  padding: 8px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.profile-container button {
+  display: block;
+  padding: 12px 24px;
+  background-color: #6200EE;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.profile-container button:hover {
+  background-color: #833AE0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+  .profile-container {
+    padding: 1rem;
+  }
+}
+
+
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.leaderboard-table thead {
+  background-color: #6200EE;
+  color: #fff;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.leaderboard-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.leaderboard-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 800px) {
+  .leaderboard-container {
+    padding: 1rem;
+  }
+}
+
+.videos-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.video-wrapper {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.video {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .videos-container {
+    padding: 1rem;
+  }
+}
+
+.game-selection-container {
+  /* Other styles */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.game-button-container {
+  position: relative;
+  margin: 1rem;
+}
+
+.game-description {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  z-index: 10;
+}
+
+.game-button-container:hover .game-description {
+  display: block;
+}
+
+
+.game-types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .game-types {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav li {
+    text-align: center;
+  }
+
+  .video-container {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .video iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+
+
+.register-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  /* Set a smaller font size for input fields */
+}
+
+.register-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 14px;
+  /* Set a smaller font size for the submit button */
+  cursor: pointer;
+}
+
+.close-form-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-form-btn:hover {
+  color: red;
+}
+
+.videos-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.video-wrapper {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-wrapper h2 {
+    font-size: 1.2rem;
+  }
+
+  .video-wrapper p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .videos-container {
+    padding: 20px 10px;
+  }
+
+  .video-wrapper h2 {
+    font-size: 1rem;
+  }
+
+  .video-wrapper p {
+    font-size: 0.8rem;
+  }
+}
+/* Add this to your existing styles */
+.game-button-container button {
+  width: 100%;
+  min-width: 150px;
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Add media queries */
+@media screen and (max-width: 767px) {
+  .footer {
+    display: block;
+    text-align: center;
+  }
+}

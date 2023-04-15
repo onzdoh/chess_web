@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Rules</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="fa/css/all.min.css">
+    <link rel="shortcut icon" href="images\favicon.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p class="logo">Chess rules</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game-selection.html">Game Selection</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="user-profile.html">Profile</a></li>
+                <li><a href="history.html">About chess</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="rules.html">Chess rules</a></li>
+                <li><a href="#" id="register-btn">Register</a></li>
+              </ul>
+        </nav>
+        <script>
+            function toggleMenu() {
+                const nav = document.querySelector('nav');
+                nav.classList.toggle('show');
+            }
+
+            document.querySelector('.logo').addEventListener('click', toggleMenu);
+        </script>
+    </header>
+    <div id="register-form" class="register-form" style="display:none;">
+        <form style=" background: #f8fa94d8;">
+          
+          <h2>Register</h2>
+          <button type="button" id="close-form-btn" class="close-form-btn">Close</button>
+          <input type="text" id="first-name" name="first-name" placeholder="First Name">
+          <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <input type="password" id="password" name="password" placeholder="Password" required />
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required />
+          <button type="submit" id="submit-btn">Submit</button>
+          <p class="success-message"></p>
+        </form>
+      </div>
+      
+      <script src="js\registration-form.js"></script>
+    <main class="rules-page">
+        <h1>Chess Rules</h1>
+        <div class="columns">
+            <div class="column">
+                <img src="images/chess-pieces.png" alt="Chess Pieces">
+                <h2>Chess Pieces</h2>
+                <p>Each player starts the game with 16 pieces: one king, one queen, two rooks, two knights, two bishops,
+                    and eight pawns. The goal of the game is to checkmate the opponent's king.</p>
+            </div>
+            <div class="column">
+                <img src="images/chess-moves.png" alt="Moves">
+                <h2>Chess Moves</h2>
+                <p>Each chess piece has its unique way of moving. For example, the rook can move any number of squares
+                    along a rank or file, while the knight moves in an L-shape.</p>
+            </div>
+            <div class="column">
+                <img src="images/chess-castling.png" alt="Castling">
+                <h2>Castling</h2>
+                <p>Castling is a special move that involves the king and one of the rooks. This move is the only time
+                    when more than one piece can be moved during a player's turn.</p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <img src="images/en-passant.jpg" alt="En Passant">
+                <h2>En Passant</h2>
+                <p>En passant is a special pawn capture that occurs when a pawn moves two squares forward from its
+                    starting position and lands beside an opponent's pawn.</p>
+            </div>
+            <div class="column">
+                <img src="images/pawn-promotion.jpg" alt="Pawn Promotion">
+                <h2>Pawn Promotion</h2>
+                <p>Pawn promotion occurs when a pawn reaches the other side of the board. The player can promote the
+                    pawn to a queen, rook, bishop, or knight of the same color.</p>
+            </div>
+            <div class="column">
+                <img src="images/checkmate.png" alt="Checkmate">
+                <h2>Checkmate</h2>
+                <p>Checkmate happens when a player's king is in check and there is no legal move to get the king out
+                </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <img src="images/chess-pieces.png" alt="Chess Pieces">
+                <h2>Chess Pieces</h2>
+                <p>Each player starts the game with 16 pieces: one king, one queen, two rooks, two knights, two bishops,
+                    and eight pawns. The goal of the game is to checkmate the opponent's king.</p>
+            </div>
+            <div class="column">
+                <img src="images/chess-moves.png" alt="Moves">
+                <h2>Chess Moves</h2>
+                <p>Each chess piece has its unique way of moving. For example, the rook can move any number of squares
+                    along a rank or file, while the knight moves in an L-shape.</p>
+            </div>
+            <div class="column">
+                <img src="images/chess-castling.png" alt="Castling">
+                <h2>Castling</h2>
+                <p>Castling is a special move that involves the king and one of the rooks. This move is the only time
+                    when more than one piece can be moved during a player's turn.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Chess Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
